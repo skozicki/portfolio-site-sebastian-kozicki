@@ -1,0 +1,144 @@
+/*
+Colors used:
+text-color (black): #000000CC
+accent-color (viole): #832E88
+pure-white-color: #FFFFFF
+surface-color: #EDEDED
+*/
+:root {
+    /* colors */
+    --text-color: #000000CC;
+    --accent-color: #832E88;
+    --accent-hover-color: #832E88CC;
+    --accent-pressed-color: #5B165F;
+    --pure-white-color: #FFFFFF;
+    --surface-color: #EDEDED;
+
+    /* border radius */
+    --radius-sm: 1em;
+    --radius-md: 2em;
+    --radius-round: 7em;
+
+}
+
+body {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-color)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+img:hover {
+    filter: grayscale(100%);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.social {
+    width: 44px;
+    height: auto;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-hover-color);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:active {
+    color: #994c30;
+}
+
+.btn-primary-normal {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--pure-white-color);
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: var(--radius-round);
+    transition: 0.2s opacity;
+}
+
+.btn-primary-normal:hover {
+    opacity: 0.8;
+    color: var(--pure-white-color);
+    text-decoration: none;
+    box-shadow: 0px 4px 8px 0px #832e8886;
+
+}
+
+.btn-primary-normal:active {
+    background-color: var(--accent-pressed-color);
+    color: var(--pure-white-color);
+    text-decoration: none;
+}
+
+.btn-secondary-normal {
+    display: inline-block;
+    background-color: var(--pure-white-color);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 2em;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--radius-round);
+    transition: 0.2s opacity;
+
+}
+
+.btn-secondary-normal:hover {
+    opacity: 0.8;
+    color: var(--accent-color);
+    text-decoration: none;
+    box-shadow: 0px 4px 8px 0px #832e8886;
+
+}
