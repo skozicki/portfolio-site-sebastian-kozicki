@@ -7,12 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastian Kozicki UI Porfolio</title>
     <link href="img/favicon/favicon.ico" rel="shortcut icon">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,700;1,6..12,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="img/svg/SebastianKozicki-Design-logo.svg" alt="Sebastian Kozicki logo"></a>
+            <a href="index.html"><img class="logo" src="img/svg/SebastianKozicki-Design-logo.svg"
+                    alt="Sebastian Kozicki logo"></a>
         </div>
         <nav>
             <ul>
@@ -28,215 +38,226 @@
         <!--This is HERO section-->
         <div>
             <div>
-                <div>
+                <div id="hero-section">
                     <h1>
-                        <span>I’m Sebastian.
-                            A Visual Designer curious
-                            about the world.</span>
+                        I’m Sebastian.
+                        A Visual Designer curious
+                        about the world.
                     </h1>
-                </div>
-                <div>
-                    <p>Welcome to a showcase that's more than pixels – it's a direct connection to the beating pulse of
-                        my design soul.</p>
-                </div>
-                <div>
-                    <a href="#">Jump into projects</a>
-                </div>
-                <div>
-                    <video playsinline autoplay muted loop id="video" width="x" height="y">
-                        <source src="video/777738_90s_Abstract_Animations_1920x1080.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-
-
-        <!--This is WORK PREVIEW section-->
-
-        <div>
-            <div>
-                <h2>
-                    Case studies
-                </h2>
-                <div>
-                    <a href="work.html">More projects</a>
-                </div>
-            </div>
-
-            <!--3 columns-->
-            <div>
-                <div>
-                    <picture>
-                        <source srcset="img/salomon-app/salomon_@1x/salomon_main@1x.jpg" media="(max-width:767px)">
-                        <img src="img/salomon-app/salomon_@1x/salomon_main@1x.jpg" alt="My Image">
-                    </picture>
                     <div>
-                        <!--<div class="text-sx">Native application...</div>"-->
-                        <div>Native application / Android / iOS</div>
-
-                        <h5>Salomon equipment application</h5>
-                        <!--<div class="text-sm">A nativess...</div>"-->
-                        <div>A native application to sell & present products in non-intrusively way. It integrate all
-                            sports
-                            for which the company produces sports equipment.
-                            Methodologies & tools used: Design Thinking approach, competition analysis and user testing.
-                        </div>
-
-                        <!--<div class="link-accent">View project</div>"-->
-                        <div>
-                            <a href="salomon-app.html">View project</a>
-                        </div>
+                        <p>Welcome to a showcase that's more than pixels – it's a direct connection to the beating pulse
+                            of
+                            my design soul.</p>
                     </div>
-                </div>
-
-                <div>
-                    <picture>
-                        <source srcset="img/timbero-pp/timbero@1x/timbero_main@1x.jpg" media="(max-width:767px)">
-                        <img src="img/timbero-pp/timbero@1x/timbero_main@1x.jpg" alt="My Image">
-                    </picture>
                     <div>
-                        <div>Application & Landing Page</div>
-                        <h5>Timbero online shop</h5>
-                        <div>The application merges online shopping with the beautiful world of luxury watches,
-                            revolutionizing how discerning enthusiasts discover, explore, and acquire timepieces.
-                            Combining
-                            technology and timeless elegance, we impact the online watch retail landscape.
-                        </div>
-                        <div>
-                            <a href="#">View project</a>
-                        </div>
+                        <a href="#" class="btn-primary-normal">Jump into projects</a>
                     </div>
-                </div>
-
-                <div>
-                    <picture>
-                        <source srcset="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg">
-                        <img src="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg" alt="My Image">
-                    </picture>
                     <div>
-                        <div>Web Application / Responsive Design</div>
-                        <h5>Toilet Finder</h5>
-                        <div>Responsive application to help people find toilets quickly and effectively, considering the
-                            needs
-                            of different users, and is geolocation-based.
-                            Methodologies & tools used: competition analysis and user research/testing.
-                        </div>
-                        <div>
-                            <a href="#">View project</a>
-                        </div>
+                        <video playsinline autoplay muted loop id="video" width="x" height="y">
+                            <source src="video/777738_90s_Abstract_Animations_1920x1080.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
 
-        </div>
 
+            <!--This is WORK PREVIEW section-->
 
-        <!--This is TESTIMONIAL section-->
-        <div>
-            <div>
-                <h2>
-                    What my clients and employers say
-                </h2>
+            <div id="work-section">
+                <div>
+                    <h2>
+                        Case studies
+                    </h2>
+
+                    <a class="btn-secondary-normal" href="work.html">More projects</a>
+
+                </div>
+
+                <!--3 columns-->
+                <div>
+                    <div>
+                        <div>
+                            <picture>
+                                <source srcset="img/salomon-app/salomon_@1x/salomon_main@1x.jpg"
+                                    media="(max-width:767px)">
+                                <img src="img/salomon-app/salomon_@1x/salomon_main@1x.jpg" alt="My Image">
+                            </picture>
+                        </div>
+                        <div>
+                            <!--<p class="text-sx">Native application...</div>"-->
+                            <p>Native application / Android / iOS</p>
+
+                            <h5>Salomon equipment application</h5>
+                            <!--<div class="text-sm">A nativess...</div>"-->
+                            <p>A native application to sell & present products in non-intrusively way. It integrate
+                                all
+                                sports
+                                for which the company produces sports equipment.
+                                Methodologies & tools used: Design Thinking approach, competition analysis and user
+                                testing.
+                            </p>
+
+                            <!--<div class="link-accent">View project</div>"-->
+                            <div>
+                                <a href="salomon-app.html">View project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <picture>
+                                <source srcset="img/timbero-pp/timbero@1x/timbero_main@1x.jpg"
+                                    media="(max-width:767px)">
+                                <img src="img/timbero-pp/timbero@1x/timbero_main@1x.jpg" alt="My Image">
+                            </picture>
+                        </div>
+                        <div>
+                            <p>Application & Landing Page</p>
+                            <h5>Timbero online shop</h5>
+                            <p>The application merges online shopping with the beautiful world of luxury watches,
+                                revolutionizing how discerning enthusiasts discover, explore, and acquire timepieces.
+                                Combining
+                                technology and timeless elegance, we impact the online watch retail landscape.
+                            </p>
+                            <div>
+                                <a href="#">View project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <picture>
+                                <source srcset="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg">
+                                <img src="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg" alt="My Image">
+                            </picture>
+                        </div>
+                        <div>
+                            <p>Web Application / Responsive Design</p>
+                            <h5>Toilet Finder</h5>
+                            <p>Responsive application to help people find toilets quickly and effectively, considering
+                                the
+                                needs
+                                of different users, and is geolocation-based.
+                                Methodologies & tools used: competition analysis and user research/testing.
+                            </p>
+                            <div>
+                                <a href="#">View project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!--4 cards-->
-            <div>
+
+            <!--This is TESTIMONIAL section-->
+            <div id="testimonial-section">
+                <div>
+                    <h2>
+                        What my clients and employers say
+                    </h2>
+                </div>
+                <!--4 cards-->
                 <div>
                     <div>
-                        <!--<div class="text-sm">A nativess...</div>"-->
-                        <div>Sebastian is a person of the highest culture, he gets
-                            involved in the team and approaches his tasks very
-                            responsibly.
-                            He is also eager to develop his skills and learn quickly.
-                            He performed each of the tasks entrusted to him
-                            at the highest level with maximum commitment.</div>
-                        <!--<div class="text-md-emphasis">Urszula Obajtek owner</div>-->
-                        <div>Urszula Obajtek <i>owner</i></div>
-
-                        <!--<div class="link-accent">View project</div>"-->
                         <div>
-                            <a href="https://solara.com.pl/" target="_blank">Unlimited Advertising & Design bySOLARA</a>
+                            <!--<p class="text-sm">A nativess...</p>"-->
+                            <p>Sebastian is a person of the highest culture, he gets
+                                involved in the team and approaches his tasks very
+                                responsibly.
+                                He is also eager to develop his skills and learn quickly.
+                                He performed each of the tasks entrusted to him
+                                at the highest level with maximum commitment.</p>
+                            <!--<div class="text-md-emphasis">Urszula Obajtek owner</div>-->
+                            <p>Urszula Obajtek <i>owner</i></p>
+
+                            <!--<div class="link-accent">View project</div>"-->
+                            <div>
+                                <a href="https://solara.com.pl/" target="_blank">Unlimited Advertising & Design
+                                    bySOLARA</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div>
                     <div>
-                        <div>Cooperation with Sebastian Kozicki is a real pleasure.
-                            For the last 2 years we have been conducting several projects.
-                            Everything always perfectly prepared, on time and in accordance
-                            with my expectations. I strongly recommend! It’s really worth it!
-                        </div>
-                        <div>Marcin Zacharko <i>owner</i></div>
-
-                        <!--<div class="text-sm">Trzcina bar</div>-->
-                        <div>Trzcina Bar</div>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <div>Cooperation with Mr. Sebastian
-                            resulted in a professional,
-                            fully consistent with our expectations
-                            website, dedicated to our customers
-                            on the real estate market. In addition
-                            to the technical implementation,
-                            we received a lot of valuable tips
-                            about the functionality and appearance
-                            of the site. We especially appreciate the
-                            patience, attentiveness and availability
-                            of Mr. Sebastian.I recommend with
-                            full conviction.
-                        </div>
-                        <div>Katarzyna Bromirska <i>owner</i></div>
                         <div>
-                            <a href="https://bromirscy.pl/" target="_blank">Bromirscy Odpowiedzialna
-                                Sprzedaż Nieruchomości</a>
+                            <p>Cooperation with Sebastian Kozicki is a real pleasure.
+                                For the last 2 years we have been conducting several projects.
+                                Everything always perfectly prepared, on time and in accordance
+                                with my expectations. I strongly recommend! It’s really worth it!
+                            </p>
+                            <p>Marcin Zacharko <i>owner</i></p>
+
+                            <!--<div class="text-sm">Trzcina bar</div>-->
+                            <p>Trzcina Bar</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <p>Cooperation with Mr. Sebastian
+                                resulted in a professional,
+                                fully consistent with our expectations
+                                website, dedicated to our customers
+                                on the real estate market. In addition
+                                to the technical implementation,
+                                we received a lot of valuable tips
+                                about the functionality and appearance
+                                of the site. We especially appreciate the
+                                patience, attentiveness and availability
+                                of Mr. Sebastian.I recommend with
+                                full conviction.
+                            </p>
+                            <p>Katarzyna Bromirska <i>owner</i></p>
+                            <div>
+                                <a href="https://bromirscy.pl/" target="_blank">Bromirscy Odpowiedzialna
+                                    Sprzedaż Nieruchomości</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <p>I highly appreciate cooperation with
+                                Mr. Sebastian Kozicki in the field of broadly
+                                understood computer graphics with elements
+                                of dtp. Mr. Sebastian carried out work for us
+                                in the following areas:
+                                - design of polygraphic materials such
+                                as catalogs, flyers, folders, banners, etc,
+                                - preparing them for print in printing quality,
+                                - preparing graphics for websites and many
+                                others;each time fulfilling his tasks in a
+                                timely manner.
+                                He also deserves praise for excellent contact
+                                with clients, which was never left without an answer.
+                                I highly recommend cooperation with
+                                Mr. Sebastian and I am convinced that we will
+                                realize many orders together with him.
+                            </p>
+                            <p>Łukasz Wójcik <i>owner</i>
+                            </p>
+                            <div>
+                                <a href="http://aspn.pl/en/" target="_blank">
+                                    ASPEN.your print broker</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <div>I highly appreciate cooperation with
-                            Mr. Sebastian Kozicki in the field of broadly
-                            understood computer graphics with elements
-                            of dtp. Mr. Sebastian carried out work for us
-                            in the following areas:
-                            - design of polygraphic materials such
-                            as catalogs, flyers, folders, banners, etc,
-                            - preparing them for print in printing quality,
-                            - preparing graphics for websites and many
-                            others;each time fulfilling his tasks in a
-                            timely manner.
-                            He also deserves praise for excellent contact
-                            with clients, which was never left without an answer.
-                            I highly recommend cooperation with
-                            Mr. Sebastian and I am convinced that we will
-                            realize many orders together with him.
-                        </div>
-                        <div>Łukasz Wójcik <i>owner</i>
-                            s</div>
-                        <div>
-                            <a href="http://aspn.pl/en/" target="_blank">
-                                ASPEN.your print broker</a>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-        </div>
-        <!--banner-->
-        <div>
+            <!--banner-->
             <div>
                 <h3>
-                    How about...working together?
+                    Let's work together
                 </h3>
                 <div>
-                    <a href="work.html">See what can I do for you</a>
+                    <a class="btn-primary-normal" href="work.html">See what can I do for you</a>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <footer id="contact">
@@ -247,7 +268,7 @@
                 </h4>
                 <p>You like my work and want to work with me? Please, send an email:</p>
                 <div>
-                    <a href="mailto:sebastian.kozicki1@gmail.com">Email me</a>
+                    <a class="btn-secondary-normal" href="mailto:sebastian.kozicki1@gmail.com">Email me</a>
                 </div>
                 <p>or catch me on social media</p>
 
@@ -255,10 +276,10 @@
                 <div>
 
                     <a href="https://www.behance.net/sebastiankozicki" target="_blank">
-                        <img src="img/svg/behance-icon.svg" alt="behance">
+                        <img class="social" src="img/svg/behance-icon.svg" alt="behance">
                     </a>
                     <a href="https://www.linkedin.com/in/sebastian-kozicki/" target="_blank">
-                        <img src="img/svg/linkedi-icon.svg" alt="linkedin">
+                        <img class="social" src="img/svg/linkedi-icon.svg" alt="linkedin">
                     </a>
 
                 </div>
