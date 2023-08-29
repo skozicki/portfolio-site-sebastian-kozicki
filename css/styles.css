@@ -15,10 +15,19 @@ surface-color: #EDEDED
     --surface-color: #EDEDED;
 
     /* border radius */
-    --radius-sm: 1em;
-    --radius-md: 2em;
-    --radius-round: 7em;
+    --radius-none: 0rem;
+    --radius-sm: 1rem;
+    --radius-md: 2rem;
+    --radius-round: 7rem;
 
+}
+
+.center {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -29,6 +38,20 @@ body {
     color: var(--text-color)
 }
 
+main {
+    padding-top: 145px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 6px 12px rgba(131, 46, 136, 0.1)
+}
+
+
 h1,
 h2,
 h3,
@@ -38,45 +61,53 @@ h5 {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 
+
 h2 {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 h5 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
 img {
     width: 100%;
+    border-radius: var(--radius-md, 2rem);
+    border: 2px solid var(--accent-color);
 }
 img:hover {
     filter: grayscale(100%);
 }
 
 .logo {
-    width: 150px;
+    max-width: 250px;
     height: auto;
+    border: none;
+    border-radius: var(--radius-none);
+    
 }
 
 .social {
     width: 44px;
     height: auto;
+    border: none;
+    border-radius: var(--radius-none);
 }
 
 a {
@@ -90,10 +121,10 @@ a:focus {
     text-decoration: underline;
 }
 
-a:visited {
+/* a:visited {
     color: aqua;
 }
-
+*/
 a:active {
     color: #994c30;
 }
@@ -103,7 +134,7 @@ a:active {
     background-color: var(--accent-color);
     color: var(--pure-white-color);
     text-align: center;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     border-radius: var(--radius-round);
     transition: 0.2s opacity;
 }
@@ -126,8 +157,7 @@ a:active {
     display: inline-block;
     background-color: var(--pure-white-color);
     color: var(--accent-color);
-    text-transform: uppercase;
-    text-align: center;
+        text-align: center;
     padding: 1em 2em;
     border: 1px solid var(--accent-color);
     border-radius: var(--radius-round);
@@ -142,3 +172,73 @@ a:active {
     box-shadow: 0px 4px 8px 0px #832e8886;
 
 }
+
+.banner {
+    background-color: var(--surface-color);
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+/* Layput styling */
+
+.container {
+    padding: 0 16px;
+}
+
+.row {
+    margin: 32px 0;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div > ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+nav > ul >li {
+    display: inline-block;
+}
+
+nav > ul >li > a {
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-color)
+}
+
+nav > ul >li > a:hover {
+    color: var(--accent-hover-color);
+text-decoration: none;
+}
+
+nav > ul >li > a:active {
+    color: var(--accent-pressed-color);
+text-decoration: none;
+}
+
+#hero-section {
+    display: inline-block;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0.67rem 0;
+    
+}
+#video {
+    max-width: 100%;
+    height: auto;
+    
+
+}
+
