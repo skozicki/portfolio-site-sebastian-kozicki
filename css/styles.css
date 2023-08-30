@@ -22,12 +22,13 @@ surface-color: #EDEDED
 
 }
 
-.center {
-    text-align: center;
-}
 
 * {
     box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
 }
 
 body {
@@ -180,6 +181,10 @@ a:active {
     
 }
 
+.stats {
+    text-align: center;
+}
+
 
 /* Layput styling */
 
@@ -206,25 +211,38 @@ div > ul {
     padding: 0; 
 }
 
-nav > ul >li {
+nav > ul > li {
     display: inline-block;
 }
 
-nav > ul >li > a {
+nav > ul > li > a {
     padding: 0 1rem;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--text-color)
 }
 
-nav > ul >li > a:hover {
+nav > ul > li > a:hover {
     color: var(--accent-hover-color);
-text-decoration: none;
+    text-decoration: none;
 }
 
-nav > ul >li > a:active {
+nav > ul > li > a:active {
     color: var(--accent-pressed-color);
-text-decoration: none;
+    text-decoration: none;
+}
+
+
+#bottom-nav {
+    text-transform: uppercase;
+    color: var(--text-color);
+    display: block;
+    width: 60px;
+    text-decoration: none;
+}
+
+#bottom-nav:hover {
+    color: var(--accent-color);
 }
 
 #hero-section {
