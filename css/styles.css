@@ -52,6 +52,12 @@ header {
     box-shadow: 0 6px 12px rgba(131, 46, 136, 0.1)
 }
 
+footer {
+   background-image: url(../img/main/background-footer.png); 
+background-color: transparent;
+background-repeat: no-repeat;
+background-size: cover;
+}
 
 h1,
 h2,
