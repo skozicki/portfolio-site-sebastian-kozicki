@@ -17,19 +17,22 @@
 
 <body>
     <header>
-        <div>
+        <div class="container">
+
             <a href="index.html"><img class="logo" src="img/svg/SebastianKozicki-Design-logo.svg"
                     alt="Sebastian Kozicki logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="work.html">work</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
 
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
     <main>
         <!--This is HERO section-->
@@ -455,17 +458,19 @@
 
 
     <footer id="contact">
+
         <div class="container">
-            <div class="row">
-                <div>
+            <div class="footer-container">
+                <div id="contact-me">
                     <h4>
                         Let's stay in touch
                     </h4>
-                    <p>You like my work and want to work with me? Please, send an email:</p>
+                    <p class="text-footer">
+                        Do you like my work? Don't hesitate and just</p>
                     <div>
-                        <a class="btn-secondary-normal" href="mailto:sebastian.kozicki1@gmail.com">Email me</a>
+                        <a class="btn-secondary-normal" href="mailto:sebastian.kozicki1@gmail.com">Send an email</a>
                     </div>
-                    <p>or catch me on social media</p>
+                    <p class="text-footer">or catch me on social media</p>
 
                     <!--Social Media and Placeholders-->
                     <div>
@@ -479,21 +484,18 @@
 
                     </div>
                 </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="work.html">work</a></li>
-                            <li><a href="about.html">about</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
-                    </nav>
+                <div id="verical-menu">
+                    <a id="bottom-nav" href="index.html">home</a>
+                    <a id="bottom-nav" href="work.html">work</a>
+                    <a id="bottom-nav" href="about.html">about</a>
+                    <a id="bottom-nav" href="#contact">contact</a>
                 </div>
+
+
             </div>
             <div>
-                <p>Copyright Sebastian Kozicki 20203</p>
+                <p class="text-xs">Copyright Sebastian Kozicki 2023</p>
             </div>
-
         </div>
 
     </footer>
