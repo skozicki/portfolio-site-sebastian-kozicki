@@ -17,47 +17,55 @@
 
 <body>
     <header>
-        <div>
+        <div class="container">
+
             <a href="index.html"><img class="logo" src="img/svg/SebastianKozicki-Design-logo.svg"
                     alt="Sebastian Kozicki logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="work.html">work</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
 
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
     <main>
         <!--This is HERO section-->
         <div class="container">
-            <div class="row">
-                <div>
-                    <h1>
-                        Work
-                    </h1>
 
+            <div>
+                <h1>
+                    Work
+                </h1>
+            </div>
+
+            <div class="hero">
+                <div>
                     <div>
-                        <p>​I thrive on the exhilarating journey of crafting
+                        <p class="intro">​I thrive on the exhilarating journey of crafting
                             websites and applications that fuse creativity
                             with functionality.</p>
+                    </div>
+                    <div>
                         <p>As you explore the treasure trove of projects showcased here, you'll uncover the fruit of the
                             delightful collaborations and even a few passion projects designed exclusively for my
                             gratification.</p>
-                        <p><strong>
-                                Step right into my creative universe.</strong></p>
-
+                        <p>Step right into my creative universe.</p>
                     </div>
                 </div>
                 <div>
-                    <video playsinline autoplay muted loop id="video" width="x" height="y">
-                        <source src="video/777738_90s_Abstract_Animations_1920x1080.mp4" type="video/mp4">
+                    <video playsinline autoplay muted loop id="video" media="(max-width:683px)">
+                        <source src="video/home-page-video.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
+
+        </div>
         </div>
 
         <!--Full case studies section-->
@@ -68,47 +76,50 @@
             </h2>
         </div>
 
-        <!-- grid: 3 column -->
+
         <div class="container">
-            <div class="row">
+            <div class="grid-container">
+
                 <div>
-                    <picture>
-                        <source srcset="img/salomon-app/salomon_@1x/salomon_main@1x.jpg" media="(max-width:767px)">
-                        <a href="salomon-app.html">
-                            <img src="img/salomon-app/salomon_@1x/salomon_main@1x.jpg" alt="salomon app">
-                        </a>
-                    </picture>
+
+                    <source srcset="img/salomon-app/salomon_@1x/salomon_main@1x.jpg" media="(max-width:767px)">
+                    <a href="salomon-app.html">
+                        <img src="img/salomon-app/salomon_@1x/salomon_main@1x.jpg" alt="salomon app">
+                    </a>
+
                 </div>
 
 
                 <div>
-                    <picture>
-                        <source srcset="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg">
-                        <a href="#">
-                            <img src="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg" alt="toilet web app">
-                        </a>
-                    </picture>
+
+                    <source srcset="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg">
+                    <a href="#">
+                        <img src="img/toilet-app/toilet@1x/Toilet_finder_main@1x.jpg" alt="toilet web app">
+                    </a>
+
                 </div>
 
                 <div>
-                    <picture>
-                        <source srcset="img/smashed-bakery-web/smashed@1x/SmashedBakery-main@1x.jpg"
-                            media="(max-width:767px)">
-                        <a href="#">
-                            <img src="img/smashed-bakery-web/smashed@1x/SmashedBakery-main@1x.jpg" alt="salomon app">
-                        </a>
-                    </picture>
+
+                    <source srcset="img/smashed-bakery-web/smashed@1x/SmashedBakery-main@1x.jpg"
+                        media="(max-width:767px)">
+                    <a href="#">
+                        <img src="img/smashed-bakery-web/smashed@1x/SmashedBakery-main@1x.jpg" alt="salomon app">
+                    </a>
+
                 </div>
+
+
+
 
             </div>
         </div>
 
 
 
-
         <!--Micro UX/UI case studies: 2 columns-->
         <div class="container">
-            <div class="row">
+            <div>
                 <div>
                     <h2>
                         Micro UI/UX Case Studies
@@ -126,7 +137,7 @@
                             <h5>Accordion Abuse Entertaiment</h5>
                         </div>
 
-                        <!--<div class="text-md">Website</div>-->
+                        <!--<div class=" text-md">Website</div>-->
                         <div>
                             Website
                         </div>
@@ -255,17 +266,19 @@
     </main>
 
     <footer id="contact">
+
         <div class="container">
-            <div class="row">
-                <div>
+            <div class="footer-container">
+                <div id="contact-me">
                     <h4>
                         Let's stay in touch
                     </h4>
-                    <p>You like my work and want to work with me? Please, send an email:</p>
+                    <p class="text-footer">
+                        Do you like my work? Don't hesitate and just</p>
                     <div>
-                        <a class="btn-secondary-normal" href="mailto:sebastian.kozicki1@gmail.com">Email me</a>
+                        <a class="btn-secondary-normal" href="mailto:sebastian.kozicki1@gmail.com">Send an email</a>
                     </div>
-                    <p>or catch me on social media</p>
+                    <p class="text-footer">or catch me on social media</p>
 
                     <!--Social Media and Placeholders-->
                     <div>
@@ -279,30 +292,17 @@
 
                     </div>
                 </div>
-                <div class="verical-menu">
+                <div id="verical-menu">
                     <a id="bottom-nav" href="index.html">home</a>
                     <a id="bottom-nav" href="work.html">work</a>
                     <a id="bottom-nav" href="about.html">about</a>
                     <a id="bottom-nav" href="#contact">contact</a>
                 </div>
 
-                <!--
-                    <div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="work.html">work</a></li>
-                            <li><a href="about.html">about</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
-                    </nav>
-
-                </div> -->
-
 
             </div>
             <div>
-                <p>Copyright Sebastian Kozicki 20203</p>
+                <p class="text-xs">Copyright Sebastian Kozicki 2023</p>
             </div>
         </div>
 
