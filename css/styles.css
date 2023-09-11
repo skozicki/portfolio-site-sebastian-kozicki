@@ -8,6 +8,7 @@ surface-color: #EDEDED
 :root {
     /* colors */
     --text-color: #000000CC;
+    --text-color-gray: #575757;
     --accent-color: #832E88;
     --accent-hover-color: #832E88CC;
     --accent-pressed-color: #5B165F;
@@ -19,6 +20,17 @@ surface-color: #EDEDED
     --radius-sm: 1rem;
     --radius-md: 2rem;
     --radius-round: 7rem;
+
+    /* font size */
+    --heading1-size: 3.5rem;
+    --heading2-size: 3rem;
+    --heading3-size: 2.5rem;
+    --heading4-size: 2rem;
+    --heading5-size: 1.5rem;
+    --text-xs: 0.8rem;
+    --text-sm: 1rem;
+    --text-md: 1.2rem;
+    --text-lg: 1.4rem;
 
 }
 
@@ -33,7 +45,7 @@ surface-color: #EDEDED
 
 body {
     font-family: Nunito Sans, sans-serif;
-    font-size: 19px;
+    font-size: var(--p-sm);
     font-weight: 400;
     line-height: 1.6;
     color: var(--text-color)
@@ -49,7 +61,7 @@ header {
     background-color: white;
     text-align: center;
     padding: 10px 0;
-    box-shadow: 0 6px 12px rgba(131, 46, 136, 0.1)
+    box-shadow: 0 4px 8px rgba(131, 46, 136, 0.041)
 }
 
 footer {
@@ -59,51 +71,81 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: var(--heading1-size);
     font-weight: 700;
 }
 
 
 h2 {
-    font-size: 3rem;
+    font-size: var(--heading2-size);
     font-weight: 700;
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: var(--heading3-size);
     font-weight: 700;
+    margin: 0 0 32px 0;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: var(--heading4-size);
     font-weight: 700;
+    margin: 0 0 16px 0;
 }
 
 h5 {
-    font-size: 1.75rem;
+    font-size: var(--heading5-size);
     font-weight: 700;
+    margin: 0 0 16px 0;
+    /* text-transform: uppercase; */
 }
+
+p {
+    margin: 0;
+}
+
+.text-xs {
+    font-size: var(--text-xs);
+    color: var(--text-color-gray);
+}
+
+.intro {
+    font-size: var(--text-lg);
+    margin: 0 0 64px 0;
+    max-width: 328px;
+
+}
+
 
 img {
     width: 100%;
-    border-radius: var(--radius-md, 2rem);
+    border-radius: var(--radius-sm, 2rem);
     border: 2px solid var(--accent-color);
 }
+
+
 img:hover {
     filter: grayscale(100%);
 }
 
+
 .logo {
-    max-width: 250px;
+    display: inline-block;
+    max-width: 180px;
     height: auto;
     border: none;
     border-radius: var(--radius-none);
@@ -115,12 +157,38 @@ img:hover {
     height: auto;
     border: none;
     border-radius: var(--radius-none);
+    padding: 0 0 2rem 0;
+}
+
+.internal-links {
+    display: flex;
+    margin: 16px 0;
+   
+}
+
+/* .internal-links {
+    position: relative;
+    display: inline-block;
+   padding-bottom: 6px;
+   transition: color 200ms ease, border-color 200ms ease;
+   text-decoration: uppercase;
+} */
+
+.internal-links > img {
+    max-width: 24px;
+    border: none;
+    color: var
+}
+
+.internal-links > img:hover {
+    color: var(--accent-hover-color);
+
 }
 
 a {
     color: var(--accent-color);
     text-decoration: none;
-}
+    }
 
 a:hover,
 a:focus {
@@ -128,10 +196,6 @@ a:focus {
     text-decoration: underline;
 }
 
-/* a:visited {
-    color: aqua;
-}
-*/
 a:active {
     color: #994c30;
 }
@@ -184,28 +248,162 @@ a:active {
     background-color: var(--surface-color);
     width: 100%;
     text-align: center;
+    padding: 79px 0;
     
+}
+
+.container-stats {
+    background-color: var(--accent-color);
+    width: 100%;
+    text-align: center;
+    margin: 64px 0 112px 0; 
 }
 
 .stats {
     text-align: center;
+    display: inline-block;
+    padding: 0 3rem;
 }
+
+#navigation {
+    margin: 0;
+}
+
+#bottom-nav {
+    text-transform: uppercase;
+    color: var(--text-color);
+    display: block;
+    width: 60px;
+    text-decoration: none;
+    padding: 0 0 1.5rem 0;
+}
+
+#bottom-nav:hover {
+    color: var(--accent-color);
+}
+
+
+#video {
+    /* position: absolute; */
+    left: 600px;
+    bottom: 200px;
+    max-width: 40%;
+    height: auto;
+  }
+
+svg {
+    width: 300%;
+    position: relative;
+    top: -6rem;
+
+}
+
+#contact-me {
+    margin-right: 8rem;
+}
+
+.text-footer {
+    padding: 1.5rem 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 4rem 0;
+    
+      
+}
+.li-shadow {
+    border-bottom: 1px solid var(--text-color-gray);
+    padding: 2rem 0;
+}
+
+#additional-text {
+    background-color: var(--accent-color);
+    color: var(--pure-white-color);
+    padding: 96px 64px;
+    max-width: 587px;
+    height: auto;
+    position: relative;
+    top: -160px;
+    left: 360px; 
+    border-radius: var(--radius-sm);
+
+}
+
+#work-sectiom, #testimonial-section {
+    padding-bottom: 112px;
+}
+
+
+
 
 
 /* Layput styling */
 
 .container {
     padding: 0 16px;
+    max-width: 1040px;
+    margin: 0 auto;
 }
 
-.row {
-    margin: 32px 0;
+
+.card-container {
+    /* max-width: 331px; */
+    margin: 0 0 32px 0;
 }
 
-nav {
-    display: inline-block;
-    width: 100%;
+.card-content {
+    padding: 16px 16px 0 24px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 64px;
+  
+}
+
+
+.grid-container {
+    --column-count: 1;
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(var(--column-count), 1fr);
+    margin-bottom: 112px;
+    
+    
+}
+
+.grid-skills {
+    display: grid;
+       grid-template-columns: 40% 60%;
+       padding-bottom: 112px;
+}
+
+#statistic {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px 0 32px 0;
+    color: var(--pure-white-color);
+}
+
+.grid-container > h2 {
+    margin-top: 0;
+}
+
 
 nav > ul {
     list-style-type: none;
@@ -239,30 +437,143 @@ nav > ul > li > a:active {
 }
 
 
-#bottom-nav {
-    text-transform: uppercase;
-    color: var(--text-color);
-    display: block;
-    width: 60px;
-    text-decoration: none;
+
+/* ============================== 
+Animation 
+==============================*/
+
+#pen {
+    animation-duration: 3s;
+    animation-name: pen;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transform-box: fill-box;
 }
 
-#bottom-nav:hover {
-    color: var(--accent-color);
+
+@keyframes pen {
+    from {
+    transform: translate(0, -25px) rotate(0deg);
+    }
+    to {
+        transform: translate(0, 50px) rotate(10deg);
+
+    }
 }
 
-#hero-section {
-    display: inline-block;
-    width: 100%;
+#dropbig {
+animation: dropbig 5s infinite alternate linear;
+transform-box: fill-box;
+}
+
+@keyframes dropbig {
+    from {
+transform: rotate(0) translate(-24px, 0);
+    }
+    to {
+transform: rotate(-10deg) translate(-10px, 0);
+    }
+}
+
+#mouse {
+    animation: 5s;
+    animation-name: mouse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes mouse {
+    from {
+transform: translate(0, 0)
+    }
+    to {
+transform: translate(-100px, 0);
+    }
+}
+
+#cup {
+    animation: cup 5s infinite alternate linear;
+    transform-box: fill-box;
+}
+
+.cup-shadow {
+    animation: cup 5s infinite alternate linear;
+    transform-box: fill-box;
+}
+
+@keyframes cup {
+    from {
+transform: scale(1);
+    }
+    to {
+transform: scale(1.5);
+    }
+ 
+}
+
+
+
+/* ==============================
+Small devices (360px and larger)
+================================= */
+@media only screen and (min-width: 360px) 
+{
+    .grid-container {
+        --column-count: 1;
+    } 
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) 
+{
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 0;
+    }
+
+  
+      .grid-container {
+        --column-count: 2;
+    }
     
-    margin: 0;
-    padding: 0.67rem 0;
     
 }
-#video {
-    max-width: 100%;
-    height: auto;
-    
 
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+    .grid-container {
+        --column-count: 3;
+    }
+
+   
 }
 
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+    
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
