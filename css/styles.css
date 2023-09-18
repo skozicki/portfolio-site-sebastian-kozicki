@@ -386,7 +386,7 @@ a:active {
 
 }
 
-#work-sectiom, #testimonial-section {
+#work-section, #testimonial-section {
     padding-bottom: 112px;
 }
 
@@ -510,7 +510,7 @@ a:active {
     gap: 24px;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 64px;
+    padding-bottom: 112px;
   
 }
 
