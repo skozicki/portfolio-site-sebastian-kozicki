@@ -11,7 +11,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,700;1,6..12,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,700;0,6..12,900;1,6..12,400&display=swap"
         rel="stylesheet">
 </head>
 
@@ -42,412 +42,623 @@
                     Salomon Equipment Configurator
                 </h1>
             </div>
-            <div>
-                <p>Get ready for the adventure
-                    of a life.</p>
-            </div>
-            <!--flexbox; <div class="badges"></div>-->
-            <div>
-                <div>ui</div>
-                <div>native app</div>
-                <div>android</div>
-                <div>iOS</div>
-            </div>
-            <!--<div class="img"></div> (round corners & outline)-->
-            <div>
-                <picture>
-                    <source srcset="img/salomon-app/salomon_@2x/salomon_mockup@2x.jpg" media="(max-width:767px)">
-                    <img src="img/salomon-app/salomon_@2x/salomon_mockup2@2x.jpg" alt="Me">
-                </picture>
+            <div class="hero">
+                <div class="flex-container">
+                    <p class="badge">ui design</p>
+                    <p class="badge">native app</p>
+                    <p class="badge">android</p>
+                    <p class="badge">iOS</p>
+                </div>
+                <div>
+                    <source srcset="img/salomon-app/salomon_@2x/salomon_mockup2">
+                    <img src="img/salomon-app/salomon_@2x/salomon_mockup2@2x.jpg" alt="salomon-app">
+
+                </div>
             </div>
         </div>
 
-        <!--Accordion: example
-        <div class="accordion-body">
+
+        <div class="container">
+
             <div class="accordion">
 
-                <div class="container">
-                    <div class="label">What is HTML</div>
-                    <div>
+
+                <!--PROJECT OVERVIEW-->
+                <label class="accordion__item">
+                    <input type="checkbox" name="accordion">
+                    <div class="accordion__title">
+                        <h2>Project overview</h2>
                         <p>
                             Objectives / Context / Challenge & Goal / Design process
                         </p>
                     </div>
-                    <div class="content">
-                        <div>Here goes the content
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-        </div>-->
-        <div class="container">
-            <div class="accordion-body">
-                <div class="accordion">
+                    <div class="accordion__content">
+                        <div class="space-lg-vertical">
+                            <div class="column-2">
+                                <div>
+                                    <h3>False but quite plausible</h3>
+                                    <div>
+                                        <p>Salomon is one of my favorite brands because of its design and
+                                            quality.
+                                            Therefore, I prepared a brief for a new product/service based on it.
+                                            I
+                                            also added my experience with clients in various industries. Here is
+                                            a
+                                            summary:</p>
+                                    </div>
+                                </div>
+                                <source srcset="img/salomon-app/salomon_@1x/salomon_brief@1x.jpg"
+                                    media="(max-width:767px)">
+                                <img class="img-other" src="img/salomon-app/salomon_@1x/salomon_brief@1x.png"
+                                    alt="My Image">
+                            </div>
+                            <div class="grid-container-3">
+                                <div>
+                                    <h5>Objectives</h5>
+                                    <p>Creating a tool different from those offered in the market by
+                                        competitors
+                                        so that you can sell/present products non-intrusively.
+                                        It must integrate all sports for which the company produces sports
+                                        equipment.</p>
 
-                    <!--1st-->
-                    <div>
-                        <div>
-                            <h2>Project overview</h2>
+                                </div>
+                                <div>
+                                    <h5>Context</h5>
+                                    <p>Rivals are launching sales apps to simplify shopping. Customers trust
+                                        established brands for quality and variety in sports equipment. They
+                                        also compare prices and specs on search sites for the best options.
+
+                                </div>
+
+                                <div>
+                                    <h5>Requirments</h5>
+                                    <p>Developing a native app merges
+                                        company expertise and diverse
+                                        products for seamless, efficient
+                                        sports equipment shopping.
+                                        No extra staffing might be needed.
+                                    </p>
+
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <p>
-                                Objectives / Context / Challenge & Goal / Design process
-                            </p>
-                        </div>
-                        <div>
+
+                        <div class="space-lg-vertical">
+                            <div class="column-2">
+                                <div>
+                                    <h3>An idea & my place in it </h3>
+                                    <div>
+                                        <p>As per explodingtopics.com, about 6.84 billions smartphones are used
+                                            globally, roughly 85% of the 8 billion population. Our focus will be
+                                            on smartphone users.
+                                            What next - new website or additional pages on the
+                                            existing web?
+                                            No, and No.
+                                            Salomon already have it (on the example of snowboarding)</p>
+                                    </div>
+                                </div>
+                                <source srcset="img/salomon-app/salomon_@1x/salomon_screens@1x.jpg"
+                                    media="(max-width:767px)">
+                                <img class="img-other" src="img/salomon-app/salomon_@1x/salomon_screens@1x.png"
+                                    alt="My Image">
+
+                            </div>
+
+
                             <div>
-                                <div>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <h3>False but quite plausible</h3>
-                                            </div>
-                                            <div>
-                                                <p>Salomon is one of my favorite brands because of its design and
-                                                    quality.
-                                                    Therefore, I prepared a brief for a new product/service based on it.
-                                                    I
-                                                    also added my experience with clients in various industries. Here is
-                                                    a
-                                                    summary:</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <picture>
-                                                <source srcset="img/salomon-app/salomon_@1x/salomon_brief@1x.jpg"
-                                                    media="(max-width:767px)">
-                                                <img src="img/salomon-app/salomon_@1x/salomon_brief@1x.png"
-                                                    alt="My Image">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <h5>Objectives</h5>
-                                            </div>
+                                <h5>So the client wants</h5>
+                                <p>something new,</p>
+                                <p>something that will combine "showing off" knowledge and experience in
+                                    sports
+                                    equipment,</p>
+                                <p>something that will support sales,</p>
+                                <p>widely available - native app.</p>
 
-                                            <!--<div class="text-sm"></div>-->
-                                            <div>
-                                                <p>Creating a tool different from those offered in the market by
-                                                    competitors
-                                                    so that you can sell/present products non-intrusively.
-                                                    It must integrate all sports for which the company produces sports
-                                                    equipment.</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <h5>Context</h5>
-                                            </div>
+                            </div>
 
-                                            <!--<div class="text-sm"></div>-->
-                                            <div>
-                                                <p>Rivals are launching sales apps to simplify shopping. Customers trust
-                                                    established brands for quality and variety in sports equipment. They
-                                                    also compare prices and specs on search sites for the best options.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <h5>Requirments</h5>
-                                            </div>
+                            <div>
+                                <h5>My proposition</h5>
+                                <div>Native application combining the selection of equipment with the
+                                    possibility of
+                                    its purchase. Taking advantage of the ability to automatically configure
+                                    equipment for a particular sport will be a tempting option for a potential
+                                    customer. This is indicated by two things:</div>
+                                <ul>
+                                    <li>- the number of sites having this thread (over 6 millions),</li>
+                                    <li>- and the time it takes to read articles on equipment selection (on one
+                                        pageonly): from 40 min to 90 min.</li>
 
-                                            <!--<div class="text-sm"></div>-->
-                                            <div>
-                                                <p>Developing a native app merges
-                                                    company expertise and diverse
-                                                    products for seamless, efficient
-                                                    sports equipment shopping.
-                                                    No extra staffing might be needed.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </ul>
+                                <source srcset="img/salomon-app/google-search@1x.jpg" media="(max-width:767px)">
+                                <img class="img-other" src="img/salomon-app/salomon_@1x/google-search@1x.png"
+                                    alt="google-search-image">
+                            </div>
+                        </div>
 
-                                <div>
-                                    <div>
-                                        <div>
-                                            <h3>An idea & my place in it </h3>
-                                        </div>
-                                        <div>
-                                            <p>As per explodingtopics.com, about 6.84 billions smartphones are used
-                                                globally, roughly 85% of the 8 billion population. Our focus will be
-                                                on smartphone users.
-                                                What next - new website or additional pages on the
-                                                existing web?
-                                                No, and No.
-                                                Salomon already have it (on the example of snowboarding)</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <picture>
-                                            <source srcset="img/salomon-app/salomon_@1x/salomon_screens@1x.jpg"
-                                                media="(max-width:767px)">
-                                            <img src="img/salomon-app/salomon_@1x/salomon_screens@1x.png"
-                                                alt="My Image">
-                                        </picture>
-                                    </div>
-                                </div>
 
-                                <div>
-                                    <h5>So the client wants</h5>
+                        <div class="space-lg-vertical">
 
-                                    <!--<div class="text-sm"></div>-->
-                                    <div>
-                                        <ul>
-                                            <li>something new,</li>
-                                            <li>something that will combine "showing off" knowledge and experience in
-                                                sports
-                                                equipment,</li>
-                                            <li>something that will support sales,</li>
-                                            <li>widely available - native app.</li>
-                                        </ul>
-                                    </div>
-                                    <h5>My proposition</h5>
-
-                                    <!--<div class="text-sm"></div>-->
-                                    <div>
-                                        <div>Native application combining the selection of equipment with the
-                                            possibility of
-                                            its purchase. Taking advantage of the ability to automatically configure
-                                            equipment for a particular sport will be a tempting option for a potential
-                                            customer. This is indicated by two things:</div>
-                                        <ul>
-                                            <li>the number of sites having this thread (over 6 millions),</li>
-                                            <li>and the time it takes to read articles on equipment selection (on one
-                                                page
-                                                only) - from 40 min to 90 min.</li>
-
-                                        </ul>
-                                    </div>
-                                    <picture>
-                                        <source srcset="img/salomon-app/google-search@1x.jpg" media="(max-width:767px)">
-                                        <img src="img/salomon-app/salomon_@1x/google-search@1x.png" alt="My Image">
-                                    </picture>
-                                </div>
+                            <div class="grid-skills">
 
                                 <div>
                                     <h3>Challenge &amp Goal</h3>
+                                    <p class="p-narrow">On the basis of research, observations and preliminary
+                                        information, I defined
+                                        the
+                                        basic challenge, goal and set a thesis for the solution.</p>
+                                </div>
+
+
+                                <div>
+                                    <ul>
+                                        <li class="li-shadow">
+                                            <h5>My role: UX/UI designer</h5>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>Tools: Figma / Balsamiq / Photoshop</h5>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>Context: Project of the CareerFoundry UI course</h5>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <source srcset="img/salomon-app/salomon_@2x/salomon_process@2x.png">
+                            <img class="img-other" src="img/salomon-app/salomon_@2x/salomon_process@2x.png"
+                                alt="google-search-image">
+
+
+
+                            <div class="grid-container-3">
+                                <div>
                                     <div>
-                                        <p>On the basis of research, observations and preliminary information, I defined
-                                            the
-                                            basic challenge, goal and set a thesis for the solution.</p>
+                                        <h5>Main Challenge</h5>
                                     </div>
+                                    <div>
+                                        <p>modern design - maintaining readability
+                                            and accessibility</p>
+                                        <p>expandability as a business objective
+                                            (a structure that allows you to add more sports)</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h5>Solution</h5>
+                                    </div>
+                                    <div>
+                                        <p>use the classic, dark mode - verification of the contrast at each
+                                            stage
+                                            of the project</p>
+                                        <p>simplification user path to configuration - simple architecture &
+                                            flow
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h5>Main Goal</h5>
+                                    </div>
+                                    <div>
+                                        <p>replace description from the website with a single tool</p>
+                                        <p>build a tool to help customers quickly and easily select equipment
+                                            for
+                                            themselves</p>
+                                        <p>structure that allows to add more sports</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="space-mg-vertical">
+                            <div>
+                                <h3>Design Process</h3>
+                                <p>In this project, I tried to keep all the following steps by the Design
+                                    Thinking
+                                    methodology.</p>
+                            </div>
+                            <div class="flex-container-gap space-md-verical">
+                                <div class="flex-container-gap">
+                                    <div class="card-basic-1 text-md">DISCOVER<br>
+                                        &amp; DEFINE</div>
+
+                                    <div>
+                                        <p>How to find <br>the right solution?</p>
+                                        <div class="p-narrow text-sm">
+                                            <p>explore the problem &amp; decide what to fix</p>
+                                            <p>analysis of the existence of a similar solution</p>
+                                            <p>interviews / user testing</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-container-gap">
+                                    <div class="card-basic-2 text-md">DEVELOPE<br>
+                                        &amp; DELIVER</div>
+
+                                    <div>
+                                        <p>How to solve the problem<br> in the right way?</p>
+                                        <div class="p-narrow text-sm">
+                                            <p>test potential solution &amp refine final solution</p>
+                                            <p>user testing</p>
+                                            <p>iterating</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </label>
+
+
+
+                <!--LOW & MID FIDELITY WIREFRAMES-->
+                <label class="accordion__item">
+                    <input type="checkbox" name="accordion">
+                    <div class="accordion__title">
+                        <h2>Low & Mid fidelity wireframes</h2>
+                        <p>
+                            Sketches / Interaction gestures / Wireframes
+                        </p>
+                    </div>
+                    <div class="accordion__content">
+                        <div class="space-lg-vertical">
+                            <div>
+                                <h3>Let’s sketch some ideas</h3>
+                                <p>I already knew the business goal and objectives, and the research didn't give me
+                                    any clues as to what a solution for my problem might look like.
+                                    I based my first sketches on such applications as Airbnb, Decathlon, Material
+                                    Design 3 for Android and Human Interface Guidelines for iOS.</p>
+                                <source srcset="img/salomon-app/salomon_@2x/low _fidelity_wireframes@2x.png">
+                                <img class="img-other" src="img/salomon-app/salomon_@2x/low _fidelity_wireframes@2x.png"
+                                    alt="low-fid-android">
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>
+                                Native application, native gesture
+                            </h3>
+                            <p>
+                                The documentation from Google as well as from Appel is a treasure trove of knowledge
+                                when it comes to gestures and user interaction with apps. Based on them, I have
+                                selected just a few of the gestures that will be used in this application.
+                            </p>
+                            <source srcset="img/salomon-app/salomon_@2x/salomon_gestures@2x.png">
+                            <img class="img-other" src="img/salomon-app/salomon_@2x/salomon_gestures@2x.png"
+                                alt="google-search-image">
+                        </div>
+                    </div>
+                </label>
+
+
+
+                <!--TESTING-->
+                <label class="accordion__item">
+                    <input type="checkbox" name="accordion">
+                    <div class="accordion__title">
+                        <h2>Testing</h2>
+                        <p>
+                            Usability testing with real users
+                        </p>
+                    </div>
+                    <div class="accordion__content">
+                        <div class="space-lg-vertical">
+
+                            <div class="grid-skills">
+
+                                <div>
+                                    <h3>Let’s test it<br>
+                                        & refine it</h3>
+                                    <p class="p-narrow">Tests with users were conducted remotely on a high-fidelity
+                                        prototype.
+                                        Only a sample screen from each test is presented. </p>
+                                </div>
+
+
+                                <div>
+                                    <ul>
+                                        <li class="li-shadow">
+                                            <h5>4 participants (2 on Android, 2 on iOS)</h5>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>Two task:</h5>
+                                            <p>carry out the configuration</p>
+                                            <p>check your profile data</p>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>Method of testing:</h5>
+                                            <p>remote testing with screen sharing</p>
+                                            <p>testing face to face</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <source srcset="img/salomon-app/salomon_@2x/android-testing@2x.png">
+                            <img class="img-other" src="img/salomon-app/salomon_@2x/android-testing@2x.png"
+                                alt="google-search-image">
+
+                            <div class="space-md-verical">
+                                <h5>
+                                    What has been corrected (after Android test)
+                                </h5>
+                                <p>
+                                    profile has been shortened - non-physiognomy details have been moved to flow
+                                    configuration
+                                </p>
+                                <p>the readability of icons in the lower nav bar has been improved (based on a comments
+                                    from the iOS test)</p>
+                                <p>graphic indication of the country turned out to be an unnecessary feature - the flag
+                                    was deleted</p>
+                                <p>moving the budget slider was not included - *final tests showed that the user can
+                                    increase his budget if it is at the end rather than at the beginning of the
+                                    configuration</p>
+
+                            </div>
+
+
+                            <div class="space-md-verical">
+                                <source srcset="img/salomon-app/salomon_@2x/iOS-testing@2x.png">
+                                <img class="img-other" src="img/salomon-app/salomon_@2x/iOS-testing@2x.png"
+                                    alt="google-search-image">
+                                <h5>
+                                    What has been corrected (after iOS test)
+                                </h5>
+                                <p>
+                                    adding additional screens with information about the application</p>
+                                <p>resize buttons</p>
+                                <p>use of a switch between screens</p>
+                                <p>
+
+                            </div>
+                        </div>
+                    </div>
+                </label>
+
+
+                <!--UI GOODIES-->
+                <label class="accordion__item">
+                    <input type="checkbox" name="accordion">
+                    <div class="accordion__title">
+                        <h2>UI goodies</h2>
+                        <p>
+                            Style guide / Components
+                        </p>
+                    </div>
+                    <div class="accordion__content">
+                        <div class="space-lg-vertical">
+
+                            <div class="grid-skills">
+
+                                <div>
+                                    <h3>It’s not
+                                        official...</h3>
+                                    <p class="p-narrow">Salomon will not provide any branding materials, so I decided to
+                                        use their products - I chose the Blue Fire series, from which I selected three
+                                        colors and I tried to adapt the typography to the website. </p>
                                 </div>
 
                                 <div>
-                                    <div>
-                                        <h5>My role: UX/UI designer</h5>
-                                    </div>
-                                    <div>
-                                        <h5>Tools: Figma / Balsamiq / Photoshop</h5>
-                                    </div>
-                                    <div>
-                                        <h5>Context: Project of the CareerFoundry UI course</h5>
-                                    </div>
+                                    <ul>
+                                        <li class="li-shadow">
+                                            <h5>Colors</h5>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>Typography</h5>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>Components</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5>
+                                Colors
+                            </h5>
+                            <source srcset="img/salomon-app/salomon_@2x/salomon_colors@2x.jpg">
+                            <img class="img-other" src="img/salomon-app/salomon_@2x/salomon_colors@2x.jpg"
+                                alt="google-search-image">
+                            <div class="space-md-vertical">
+                                <h5>
+                                    Typography
+                                </h5>
+                                <p>When I was choosing typography, I tried to be compliance with Android and iOS
+                                    documentations.</p>
+                                <source srcset="img/salomon-app/salomon_@2x/salomon_typography@2x.png">
+                                <img class="img-other" src="img/salomon-app/salomon_@2x/salomon_typography@2x.png"
+                                    alt="google-search-image">
+                            </div>
+                            <div class="space-md-vertical">
+                                <h5>
+                                    Components
+                                </h5>
+                                <p>I present just a few of the many components I have prepared for this project.</p>
+                                <source srcset="img/salomon-app/salomon_@2x/salomon_components@2x.png">
+                                <img class="img-other" src="img/salomon-app/salomon_@2x/salomon_components@2x.png"
+                                    alt="google-search-image">
+                            </div>
+                        </div>
+                    </div>
+                </label>
+
+
+                <!--HIGH FIDELITY MOCKUPS-->
+                <label class="accordion__item">
+                    <input type="checkbox" name="accordion">
+                    <div class="accordion__title">
+                        <h2>High fidelity mockup</h2>
+                        <p>
+                            Android / iOS
+                        </p>
+                    </div>
+                    <div class="accordion__content">
+                        <div class="space-lg-vertical">
+
+                            <div class="grid-skills">
+
+                                <div>
+                                    <h3>Let’s see<br>
+                                        what we’ve got</h3>
                                 </div>
 
                                 <div>
-                                    <div>
-                                        <picture>
-                                            <source srcset="img/salomon-app/salomon_@2x/salomon_process@2x.png"
-                                                media="(max-width:767px)">
-                                            <img src="img/salomon-app/salomon_@2x/salomon_process@2x.png" alt="process">
-                                        </picture>
+                                    <ul>
+                                        <li class="li-shadow">
+                                            <h5>17 screens for iOS</h5>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>17 screens for Android</h5>
+                                        </li>
+                                        <li class="li-shadow">
+                                            <h5>Mockups</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="space-md-vertica">
+                                <h5>
+                                    Android
+                                </h5>
+                                <source srcset="img/salomon-app/salomon_@2x/salomon_hi_fid_android@2x.jpg">
+                                <img class="img-other" src="img/salomon-app/salomon_@2x/salomon_hi_fid_android@2x.jpg"
+                                    alt="google-search-image">
+                            </div>
+                            <div class="space-md-vertica">
+                                <h5>
+                                    iOS
+                                </h5>
+                                <source srcset="img/salomon-app/salomon_@2x/salomon_hi_fid_android@2x.jpg">
+                                <img class="img-other" src="img/salomon-app/salomon_@2x/salomon_hi_fid_iOS@2x.jpg"
+                                    alt="google-search-image">
+                            </div>
+                        </div>
+                        <!--GRID GALLERY-->
+                        <div class="grid-gallery full-bleed">
+                            <div class="grid-col-span-2-gallery">
+                                <img class="img-other grid-item"
+                                    src="img/salomon-app/salomon_@2x/salomon_mockup1@2x.jpg" alt="google-search-image">
+                            </div>
+                            <div class="grid-col-span-2-gallery">
+                                <img class="img-other grid-item"
+                                    src="img/salomon-app/salomon_@2x/salomon_mockup2@2x.jpg" alt="google-search-image">
+                            </div>
+                            <div class="grid-col-span-2-gallery">
+                                <img class="img-other grid-item"
+                                    src="img/salomon-app/salomon_@2x/salomon_mockup3@2x.jpg" alt="google-search-image">
+                            </div>
+                            <div>
+                                <img class="img-other grid-item" src="img/salomon-app/salomon_@2x/salomon_logo@2x.png"
+                                    alt="google-search-image">
+                            </div>
+                            <div class="vertical-item">
+                                <img class="img-other grid-item"
+                                    src="img/salomon-app/salomon_@2x/salomon_mockup5@2x-2.jpg"
+                                    alt="google-search-image">
+                            </div>
+                            <div>
+                                <img class="img-other grid-item"
+                                    src="img/salomon-app/salomon_@2x/salomon_mockup4@2x.jpg" alt="google-search-image">
+                            </div>
+                            <div class="grid-col-span-2-gallery">
+                                <img class="img-other grid-item"
+                                    src="img/salomon-app/salomon_@2x/salomon_mockup5@2x.jpg" alt="google-search-image">
+                            </div>
+                        </div>
+
+                    </div>
+                </label>
+
+
+
+                <!--HIGH FIDELITY MOCKUPS-->
+                <label class="accordion__item">
+                    <input type="checkbox" name="accordion">
+                    <div class="accordion__title">
+                        <h2>Takeways</h2>
+                        <p>
+                            Project summary
+                        </p>
+                    </div>
+                    <div class="accordion__content">
+                        <div class="space-lg-vertical">
+                            <div>
+                                <h3>Dark mode is the new standard</h3>
+                                <p>Designing native apps is quite challenging. The basis is good documentation so that
+                                    you know exactly what is possible and what is not. Material Design 3 by Google is
+                                    prepared in great detail and is friendly. Human Interface Guidelines by Apple are
+                                    more conceptual, leaving many design aspects loose and open.
+                                </p>
+                            </div>
+                            <div class="space-md-verical">
+                                <h5>Things that were a challenge in this project:</h5>
+                                <p><strong>Dark mode </strong> - ensuring readability when you have black, black,
+                                    and black at your disposal is demanding, especially in terms
+                                    of text contrast and elevation of elements (this is an area I need to improve)
+                                    - with the help come plugins for Figma like Contrast.
+                                </p>
+                                <p><strong>Simplifying the structure,</strong> but with the option of extending the
+                                    application -
+                                    I think an excellent way to do this is to design a screen node from which the
+                                    same paths are taken but with different content - this will ensure repeatability
+                                    of steps and will be easy to remember for the user.
+                                </p>
+                                <p><strong>Business case -</strong> an application for an application is a challenge,
+                                    but putting a business purpose in it takes it one step further
+                                    - an application that, thanks to an algorithm, can provide specific
+                                    feedback on user queries is a worthwhile investment.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Next step</h3>
+                            <div>
+                                <div class="grid-container-2">
+                                    <div class="card-basic-2">
+                                        <img src="img/svg/union.svg" alt="tool">
+                                        <p>building a prototype outside Figma (e.g., FlutterFlow or in another no-code
+                                            application for quick deployment for testing)</p>
                                     </div>
-                                    <!--3 col-->
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <h5>Main Challenge</h5>
-                                            </div>
-
-                                            <!--<div class="text-sm"></div>-->
-                                            <div>
-                                                <p>modern design - maintaining readability
-                                                    and accessibility
-                                                    expandability as a business objective
-                                                    (a structure that allows you to add more sports)</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <h5>Solution</h5>
-                                            </div>
-
-                                            <!--<div class="text-sm"></div>-->
-                                            <div>
-                                                <p>use the classic, dark mode - verification of the contrast at each
-                                                    stage
-                                                    of the project
-                                                    simplification user path to configuration - simple architecture &
-                                                    flow
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <h5>Main Goal</h5>
-                                            </div>
-
-                                            <!--<div class="text-sm"></div>-->
-                                            <div>
-                                                <p>replace description from the website with a single tool
-                                                    build a tool to help customers quickly and easily select equipment
-                                                    for
-                                                    themselves
-                                                    structure that allows to add more sports</p>
-                                            </div>
-                                        </div>
+                                    <div class="card-basic-2">
+                                        <img src="img/svg/group-4131.svg" alt="users">
+                                        <p>re-testing with users while paying attention to readability vs. different
+                                            displays</p>
+                                    </div>
+                                    <div class="card-basic-2">
+                                        <img src="img/svg/group-4132.svg" alt="basket-tool">
+                                        <p>adding a purchase path
+                                            and testing it again</p>
+                                    </div>
+                                    <div class="card-basic-2">
+                                        <img src="img/svg/group-4133.png" alt="magic">
+                                        <p>a detailed description of the algorithm for the selection of equipment based
+                                            on input data (user data) - for now, it will remain my sweet secret</p>
                                     </div>
                                 </div>
 
-                                <div>
-                                    <div>
-                                        <h3>Design Process</h3>
-                                        <p>In this project, I tried to keep all the following steps by the Design
-                                            Thinking
-                                            methodology.</p>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <div>DISCOVER
-                                                &amp; DEFINE</div>
-                                            <!--<div class="text-sm">-->
-                                            <div>
-                                                How to find the right Solution?
-                                                <ul>
-                                                    <li>explore the problem &amp; decide what to fix</li>
-                                                    <ili>analysis of the existence of a similar solution</li>
-                                                        <li>interviews / user testing</li>
-                                                </ul>
-                                            </div>
-
-                                            <div>DEVELOPE
-                                                &amp; DELIVER</div>
-                                            <!--<div class="text-sm">-->
-                                            <div>
-                                                How to solve the problem in the right way?
-                                                <ul>
-                                                    <li>test potential solution &amp refine final solution</li>
-                                                    <li>user testing</li>
-                                                    <li>iterating</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div></div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <hr>
                     </div>
+                </label>
 
-                    <!--2nd-->
-                    <div>
-                        <div>
-                            <h2>Low &amp Mid fidelity wireframes</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Sketches / Interaction gestures / Wireframes
-                            </p>
-                        </div>
-                        <div>
-                            <div>Here goes the content
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
 
-                    <!--3rd-->
-                    <div>
-                        <div>
-                            <h2>Testing</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Usability testing with real users
-                            </p>
-                        </div>
-                        <div>
-                            <div>Here goes the content
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
+            </div>
 
-                    <!--4th-->
-                    <div>
-                        <div>
-                            <h2>UI goodies</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Style guide / UI components
-                            </p>
-                        </div>
-                        <div>
-                            <div>Here goes the content
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
 
-                    <!--5th-->
-                    <div>
-                        <div>
-                            <h2>High fidelity mockup &amp prototyping</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Android / iOS
-                            </p>
-                        </div>
-                        <div>
-                            <div>Here goes the content
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-
-                    <!--6th-->
-                    <div>
-                        <div>
-                            <h2>Takeways</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Project summary
-                            </p>
-                        </div>
-                        <div>
-                            <div>Here goes the content
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                </div>
+        </div>
+        <!--BANNER-->
+        <div class="full-width-banner">
+            <div class="banner-content">
+                <h5>Next Case Study</h5>
+                <h3>Timbero online shop</h3>
+                <a href="#" class="btn-primary-normal">Next</a>
             </div>
         </div>
 
-        <!--banner-->
-        <div class="container">
-            <div class="banner">
-                <div>
-                    <h3>
-                        Next case study
-                        Timbero online shop
-                    </h3>
-                    <div>
-                        <a class="btn-primary-normal" href="#">Next</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
