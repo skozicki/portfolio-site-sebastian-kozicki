@@ -16,24 +16,31 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,700;0,6..12,900;1,6..12,400&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53c276e98a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img class="logo" src="img/svg/SebastianKozicki-Design-logo.svg"
+                        alt="Sebastian Kozicki logo">
+                </a>
 
-            <a href="index.html"><img class="logo" src="img/svg/SebastianKozicki-Design-logo.svg"
-                    alt="Sebastian Kozicki logo"></a>
 
 
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="work.html">work</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
+
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="work.html">work</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
 
         </div>
     </header>
@@ -3291,6 +3298,8 @@
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 
 </body>
