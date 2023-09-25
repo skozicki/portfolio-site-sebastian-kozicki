@@ -64,8 +64,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    /* text-align: center; */
-    padding: 10px 0 4px 0;
+        padding: 10px 0 4px 0;
     box-shadow: 0 4px 8px rgba(131, 46, 136, 0.041);
     z-index: 9999;
 }
@@ -79,11 +78,6 @@ background-size: cover;
 
 
 
-/* nav {
-    display: inline-block;
-    width: 100%;
-    
-} */
 
 h1,
 h2,
@@ -124,7 +118,7 @@ h5 {
     font-size: var(--heading5-size);
     font-weight: 700;
     margin: 0 0 16px 0;
-    /* text-transform: uppercase; */
+    
 }
 
 
@@ -153,6 +147,7 @@ strong{
 .text-xs {
     font-size: var(--text-xs);
     color: var(--text-color-gray);
+    padding: 0;
 }
 
 .text-sm {
@@ -206,6 +201,12 @@ img:hover {
     
 }
 
+.img-arrow {
+    width: 44px;
+    height: auto;
+    transform: rotate(180deg);
+}
+
 .social {
     width: 44px;
     height: auto;
@@ -251,8 +252,7 @@ a:active {
 
 .company-link {
     font-size: var(--text-xs);
-    line-height: normal;
-    font-weight: 700;
+        font-weight: 700;
 
 }
 
@@ -337,21 +337,13 @@ a:active {
 
 
 #video {
-    /* position: relative;
-    left:400px;
-    bottom: 430px; */
+  
     max-width: 66%;
     height: auto;
     border: 2px solid var(--accent-color);
     border-radius: var(--radius-sm);
   }
 
-/* svg {
-    width: 200%;
-    position: relative;
-    top: -6rem;
-
-} */
 
 #contact-me {
     margin-right: 8rem;
@@ -377,11 +369,11 @@ a:active {
 #additional-text {
     background-color: var(--accent-color);
     color: var(--pure-white-color);
-    padding: 96px 64px;
+    padding: 64px 48px 58px 64px;
     max-width: 587px;
     height: auto;
     position: relative;
-    top: -160px;
+    top: -100px;
     left: 360px; 
     border-radius: var(--radius-sm);
 
@@ -398,8 +390,7 @@ a:active {
 
   #box-1 {
     background-color: var(--surface-color);
-    /* color: var(--pure-white-color); */
-    box-shadow: -2px 2px 16px -8px #00000035;
+        box-shadow: -2px 2px 16px -8px #00000035;
   }
   
   #box-2 {
@@ -469,8 +460,7 @@ a:active {
 
 
 .card-container {
-    /* max-width: 331px; */
-    margin: 0 0 32px 0;
+        margin: 0 0 32px 0;
 }
 
 .card-content {
@@ -620,11 +610,19 @@ a:active {
     margin: 64px 0 0px 0;
 }
 
+.space-sm-verical {
+    margin: 32px 0 0px 0;
+}
+
 .badge {
-   border: 1px solid var(--accent-color);
+   /* border: 1px solid var(--text-color); */
    border-radius: var(--radius-round);
-   color: var(--accent-color);
-   padding: 12px 16px;
+   color: var(--pure-white-color);
+   background-color: var(--text-color-gray);
+   padding: 4px 16px;
+   margin: 4px 2px;
+   font-size: var(--text-xs);
+   /* font-weight: 700; */
     }
 
 
@@ -706,6 +704,8 @@ nav > ul > li > a:active {
     background-repeat: no-repeat;
     
   }
+
+ 
 
 
 
