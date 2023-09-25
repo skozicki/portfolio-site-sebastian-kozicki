@@ -20,6 +20,13 @@
 </head>
 
 <body>
+    <div class="cookies-eu-banner hidden">
+        By clicking "Accept," you agree to my use of cookies on this site for analytical purposes only.
+        You should also
+        know that I use the Google Fonts API - read what it means for you
+        <a href="https://developers.google.com/fonts/faq/privacy" id="cookie-link">HERE</a>
+        <button>Accept</button>
+    </div>
     <header>
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
@@ -27,15 +34,12 @@
                         alt="Sebastian Kozicki logo">
                 </a>
 
-
-
-
                 <nav>
                     <ul class="navigation">
                         <li><a href="index.html">home</a></li>
                         <li><a href="work.html">work</a></li>
                         <li><a href="about.html">about</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">contact</a></li>
                         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
                                     class="fas fa-bars"></i></a></li>
                     </ul>
